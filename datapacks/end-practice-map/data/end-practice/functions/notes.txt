@@ -1,0 +1,16 @@
+/data merge entity @e[type=minecraft:ender_dragon,limit=1] {DragonPhase:2}
+
+/tellraw @p [{"color":"#00B2FF","bold":"true","text":"Click to Edit Fountain Preset 1","clickEvent":{"action":"run_command","value":"/function end-practice:fountain_presets/fountain_preset_1"}},{"color":"#00B2FF","bold":"true","text":"\nClick to Edit Fountain Preset 2","clickEvent":{"action":"run_command","value":"/function end-practice:fountain_presets/fountain_preset_2"}},{"bold":"true","color":"#00B2FF","text":"\nClick to Edit Fountain Preset 3","clickEvent":{"action":"run_command","value":"/function end-practice:fountain_presets/fountain_preset_3"}}]
+
+/tellraw @p [{"text":"Map Author: ryguy2k4","color":"#00B2FF"},{"text":"\nBased off of: Emma's End Practice Map","color":"#00B2FF","clickEvent":{"action":"open_url","value":"https://sites.google.com/view/emma-practice-map/home"}},{"text":"\nBased off of: JoJo's Perch Practice Map","color":"#00B2FF","clickEvent":{"action":"open_url","value":"https://github.com/jojoe77777/PerchPractice/releases/tag/1.2"}},{"text":"\n(you can click the text above)","color":"#00B2FF"}]
+
+To-Do
+- phase display not catching insta perch
+- indicate when a one-cycle has failed
+- force reset on login
+
+Changelog:
+- Added lowkey dragon damage option
+- A dashed line will seperate dragon damages from different rounds
+- Dragon damage messages for when the dragon is killed by the map no longer appear (the 200 damage messages)
+- Foolproofed the fountain preset and chest preset editors
