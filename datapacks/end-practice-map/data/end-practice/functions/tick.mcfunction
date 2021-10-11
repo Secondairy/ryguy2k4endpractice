@@ -83,7 +83,7 @@ execute if score instantreset Settings matches 1 run kill @e[type=ender_dragon,n
 execute if score instantreset Settings matches 1 run kill @e[type=ender_dragon,nbt={DragonPhase:5}]
 execute if score instantreset Settings matches 1 run kill @e[type=ender_dragon,nbt={DragonPhase:6}]
 execute if score instantreset Settings matches 1 run kill @e[type=ender_dragon,nbt={DragonPhase:7}]
-execute if score mode Settings matches 0..2 run kill @e[type=ender_dragon,nbt={DragonPhase:8}]
+execute if score mode Settings matches 0..1 run kill @e[type=ender_dragon,nbt={DragonPhase:8}]
 execute if score mode Settings matches 0..1 run kill @e[type=ender_dragon,nbt={DragonPhase:9}]
 execute if score mode Settings matches 0..1 run kill @e[type=ender_dragon,nbt={DragonPhase:10}]
 execute if score mode Settings matches 1 if score hasPerched Dragon matches 1 run kill @e[type=ender_dragon,nbt={DragonPhase:0}]
